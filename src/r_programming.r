@@ -735,34 +735,3 @@ cummin(c(1,5,-3,3,4,5))
 sample(0:1, 10, replace = TRUE) # 10 random numbers with values 1 and 0 
 
 sample(0:20, 10, replace = TRUE) # 10 random numbers with values 0 to 20
-
-##################################
-# Regression analysis
-##################################
-
-# In statistical modeling, regression analysis is a set of statistical processes for estimating the 
-# relationships among variables. 
-# It includes many techniques for modeling and analyzing several variables, 
-# when the focus is on the relationship between a dependent variable and one 
-# or more independent variables.
-
-# using the build faithful dataset
-head(faithful)
-
-# data = read.table(file=file.choose(),
-#                         header=T, sep=" ",
-#                         na.strings = " ",
-#                         stringsAsFactors = F)
-
-data = faithful[,c("eruptions", "waiting")]
-
-relation = lm(data$eruptions~data$waiting)
-
-png(file="Eruptions_Waiting_Regression.png")
-
-plot(data$eruptions~data$waiting, 
-     main="Eruptions & Waiting Regression",
-     abline(lm(data$eruptions~data$waiting)),
-     xlab="eruptions", ylab="waiting")
-
-dev.off() # save the graph into a file
