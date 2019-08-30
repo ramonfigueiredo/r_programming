@@ -1,4 +1,4 @@
-R programming
+Some programming examples in R
 ===========================
 
 ## Contents
