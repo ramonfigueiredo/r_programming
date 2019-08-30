@@ -1,8 +1,8 @@
 R programming
 ===========================
 
-## Data Preprocessing
-1. [Data Preprocessing](#data-preprocessing)
+## Contents
+1. [R Programming](#r-programming)
 2. [How to run the R program](#how-to-run-the-r-program)
 
 ## R Programming
